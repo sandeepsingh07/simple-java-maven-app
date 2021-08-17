@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stages {
+        
         stage('SonarQube Anaysis') {
             steps {
                 sh 'mvn sonar:sonar -Dsonar.login=76cf8b2f5a34811c02b34c510e01e5e981a952c9'
