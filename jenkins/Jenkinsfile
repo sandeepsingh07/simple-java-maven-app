@@ -24,7 +24,7 @@ pipeline {
         
         stage('SonarQube Anaysis') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.host.url="http://192.168.0.203:9000" -Dsonar.login=76cf8b2f5a34811c02b34c510e01e5e981a952c9 -DdeployAtEnd=false'
+                sh 'mvn sonar:sonar -Dsonar.host.url="http://192.168.0.203:9000" -Dsonar.login=sonar_auth -DdeployAtEnd=false'
             }
         }
         stage('Deliver') {
