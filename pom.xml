@@ -19,7 +19,7 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-       <version>0.8.8-SNAPSHOT</version>
+       <version>0.8.6-SNAPSHOT</version>
    </dependency>
     
   </dependencies>
