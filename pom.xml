@@ -8,12 +8,20 @@
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+ 
+    <dependency>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+       <version>0.8.8-SNAPSHOT</version>
+   </dependency>
+    
   </dependencies>
   <build>
     <plugins>
