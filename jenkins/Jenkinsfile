@@ -25,7 +25,7 @@ pipeline {
         stage('SonarQube Anaysis') {
             steps {
                 sh 'mvn sonar:sonar -Dsonar.host.url="http://192.168.0.203:9000" -Dsonar.login=$sonar_auth -DdeployAtEnd=false'
-                sh 'jacoco(execPattern: 'target/jacoco.exec')'
+                 'jacoco(execPattern: 'target/jacoco.exec')'
             }
         }
         stage('Deliver') {
